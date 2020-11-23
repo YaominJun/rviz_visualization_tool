@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="rviz_visualization" type="rviz_visualization_demo_node" 
+        name="rviz_visualization_demo_node" output="screen">
+    </node>
+
+    <node pkg="rviz" type="rviz" name="rviz" output="screen" 
+        args="-d $(find rviz_visualization)/config/rviz_visual.rviz" >
+    </node>
+</launch>
